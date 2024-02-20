@@ -1,0 +1,63 @@
+
+/* universal slector */
+/* box-sizing: content-box; */
+* { box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  }
+
+/* reset the body's margins */
+body{ 
+  margin: 0;
+  
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+
+h1 {
+  margin: 0;
+  padding: 1em 0;
+
+  background-color: aquamarine;
+
+  font-size: 8em;
+  font-weight: 500;
+  line-height: 0.8;
+  letter-spacing: -2px;
+  text-align: center;
+}
+h2{
+  margin: 0;
+
+  font-size: 3em;
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: .9;
+}
+article{ 
+  padding: 1em;
+  min-height: 50vw;
+  /* Viewpot units (Absolute Unit)*/
+  /* 100vw = viewport widht */
+  /* 100vh = viewport height */
+
+  background-color: rgba(255, 255, 0, 0.227);
+
+}  
+
+article:nth-child(odd) {
+  background-color: rgba(255, 255, 0, 0.554);
+}
+
+footer {
+  padding: 1em;
+}
+
+.symbol {
+  color: red;
+  font-size: 4em;
+}
