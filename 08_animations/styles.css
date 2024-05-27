@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 125%;
+}
+
+/* CSS transitions */
+p {
+  font-size: 2rem;
+  color: pink
+}
+
+
+.link {
+  font-size: 3rem;
+  /* color: inherit; */
+  /* color:inhherit dice al link di comportarsi come il p */
+
+  background-color: yellow;
+
+  transition-property: background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
+  transition-delay: 0;
+  /* shorthand */
+  transition: background-color 300ms ease-in 0;
+
+}
+
+/* focus color */
+a:focus-visible {
+  outline-color: pink;
+}
+
+/* when hover is supported, to remove hover for smartphones*/
+@media (hover: hover) {
+  .link:hover {
+    background-color: transparent;
+
+    /* overwriting the transition duration */
+    transition-duration: 50ms;
+  }
+
+  a {
+    
+    /* per far funzionare la transfom deve essere in-line-block*/
+    outline: 1px solid red;
+    display: inline-block;
+    transform-origin: top left;
+    transform: scale(1.2) rotate(45deg);
+    transition: transform 200ms;
+  }
+}

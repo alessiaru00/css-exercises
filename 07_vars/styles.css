@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+/* html but stronger */
+:root {
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2em;
+  /* CSS variables declared at root level */
+  --backgroundColor: yellow;
+  --textColor: #111;
+
+  --myBorder:1px solid red;
+  --myBorderColor:purple;
+  --myBorderStyle:dashed;
+
+  
+}
+
+html {
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+}
+
+@media (max-width: 600px) {
+  html {
+    color: var(--backgroundColor);
+    background-color: var(--textColor);
+  }
+}
+
+h1{
+border-top: var(--myBorder);
+border-bottom: 5px var(--myBorderStyle);
+}
+

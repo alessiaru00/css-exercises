@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 125% means 20px (16px=100%) */
+html {
+  font-size: 125%;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+
+  list-style: none;
+  border: 20px solid pink;
+}
+
+li {
+  border: 2px solid blue;
+}
+
+/* Apply display flex property */
+.flex {
+  display: flex;
+  /* This element becomes a flex container*/
+  /* All its direct decendants flex items */
+  
+
+}
