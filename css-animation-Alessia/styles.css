@@ -23,6 +23,8 @@ body {
   height: 600px;
   background-color: gray;
   z-index: 0;
+
+  transform-origin: center bottom;
 }
 
 svg {
@@ -31,7 +33,6 @@ svg {
   z-index: 1;
 
   animation: planeCrash;
-  -webkit-animation: planeCrash 8s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
   animation: planeCrash 8s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
@@ -57,23 +58,19 @@ svg {
 
 @keyframes planeCrash {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0) rotate(90deg);
     ;
   }
 
   20% {
-    -webkit-transform: translateX(200px) translateY(100px);
     transform: translateX(200px) translateY(100px) rotate(140deg);
   }
 
   70% {
-    -webkit-transform: translateX(500px) translateY(200px);
     transform: translateX(500px) translateY(200px) rotate(140deg);
   }
 
   100% {
-    -webkit-transform: translateX(800px) translateY(800px);
     transform: translateX(800px) translateY(800px) rotate(140deg);
   }
 }
