@@ -37,9 +37,8 @@ body {
   margin: 0 auto;
   box-shadow: 1px 1px 15px 1px rgba(255, 255, 255, 0.76);
 
-  animation-delay: 4s;
   animation-name: rotate;
-  animation-duration: 10s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -53,8 +52,7 @@ body {
   position: relative;
   transform: translatex(60px);
   transform-origin: -80px center;
-  animation-delay: 6s;
-
+  animation-duration: 10s;
 }
 
 .venus {
@@ -66,7 +64,7 @@ body {
   position: relative;
   transform: translatex(90px);
   transform-origin: -90px center;
-  animation-delay: 8s;
+  animation-duration: 15s;
 }
 
 .earth {
@@ -78,7 +76,7 @@ body {
   left: 134px;
   transform: translatex(130px);
   transform-origin: -130px center;
-  animation-delay: 6s;
+  animation-duration: 10s;
 }
 
 .mars {
@@ -90,7 +88,7 @@ body {
   left: 180px;
   transform: translatex(170px);
   transform-origin: -170px center;
-  animation-delay: 5s;
+  animation-duration: 20s;
 }
 
 .jupiter {
@@ -103,7 +101,7 @@ body {
   left: 224px;
   transform: translatex(220px);
   transform-origin: -220px center;
-  animation-delay: 8s;
+  animation-duration: 25s;
 }
 
 .saturn {
@@ -115,7 +113,7 @@ body {
   left: 279px;
   transform: translatex(275px);
   transform-origin: -270px center;
-  animation-delay: 10s;
+  animation-duration: 10s;
 }
 
 .uranus {
@@ -127,7 +125,7 @@ body {
   left: 324px;
   transform: translatex(320px);
   transform-origin: -320px center;
-  animation-delay: 6s;
+  animation-duration: 15s;
 }
 
 .neptune {
@@ -139,8 +137,7 @@ body {
   left: 300px;
   transform: translatex(370px);
   transform-origin: -200px center;
-  animation-delay: 10s;
-
+  animation-duration: 20s;
 }
 
 @keyframes rotate {
